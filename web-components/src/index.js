@@ -1,1 +1,1 @@
-import TestButton from "./components/test-button/test-button.js";
+import TestButton from "./components/instance-button/instance-button.js";

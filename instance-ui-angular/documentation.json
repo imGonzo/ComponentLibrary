@@ -1,0 +1,235 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-39d303011933b41fd810d46eba39656e0290c8c753db3d9491b95196b86c7582b6aa972a14f176ff7e1e2654ee36dce4d9628000fdf7d86b15e03a7963d09525",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'angular-components'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "RouterOutlet"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { RouterOutlet } from '@angular/router';\r\nimport 'd-g-component-library';\r\n\r\n@Component({\r\n    selector: 'app-root',\r\n    standalone: true,\r\n    imports: [CommonModule, RouterOutlet],\r\n    templateUrl: './app.component.html',\r\n    styleUrl: './app.component.scss',\r\n    schemas: [CUSTOM_ELEMENTS_SCHEMA],\r\n})\r\nexport class AppComponent {\r\n    title = 'angular-components';\r\n}\r\n",
+            "styleUrl": "./app.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<h1>Not Implemented</h1>\r\n"
+        },
+        {
+            "name": "InstanceUIComponent",
+            "id": "component-InstanceUIComponent-89ff387167e8ed118b24f5eb87ae2f391f54429d224dc360ec633fc61df6ffd67eaeaa798cdb0bf2c233e955eead78aef9b4fa7d94038441a9a8db049936714a",
+            "file": "src/components/instance-ui-button/instance-ui-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "instance-ui-button",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./instance-ui-button.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "appearance",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nType of button\n",
+                    "description": "<p>Type of button</p>\n",
+                    "line": 26,
+                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"ghost\"",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 509,
+                            "end": 525,
+                            "flags": 16842752,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 334,
+                            "tagName": {
+                                "pos": 510,
+                                "end": 518,
+                                "flags": 16842752,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 80,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 20,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "loading",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nShow loading spinner\n",
+                    "description": "<p>Show loading spinner</p>\n",
+                    "line": 32,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CUSTOM_ELEMENTS_SCHEMA, Component, Input } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport 'instance-ui/dist/instance-ui';\r\n\r\n@Component({\r\n    selector: 'instance-ui-button',\r\n    standalone: true,\r\n    imports: [CommonModule],\r\n    templateUrl: './instance-ui-button.component.html',\r\n    styleUrl: './instance-ui-button.component.scss',\r\n    schemas: [CUSTOM_ELEMENTS_SCHEMA],\r\n})\r\nexport class InstanceUIComponent {\r\n    /**\r\n     * Button contents\r\n     *\r\n     * @required\r\n     */\r\n    @Input()\r\n    label: any = 'Button';\r\n\r\n    /**\r\n     * Type of button\r\n     */\r\n    @Input()\r\n    appearance: 'primary' | 'secondary' | 'tertiary' | 'ghost' = 'primary';\r\n\r\n    /**\r\n     * Show loading spinner\r\n     */\r\n    @Input()\r\n    loading: boolean = false;\r\n}\r\n",
+            "styleUrl": "./instance-ui-button.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<instance-button\r\n    [attr.appearance]=\"appearance\"\r\n    [attr.loading]=\"loading ? 'loading' : null\"\r\n>\r\n    {{ label }}\r\n</instance-button>\r\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\r\n  providers: [provideRouter(routes)]\r\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\r\n  providers: [provideRouter(routes)]\r\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 25,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/instance-ui-button/instance-ui-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InstanceUIComponent",
+                "coveragePercent": 75,
+                "coverageCount": "3/4",
+                "status": "good"
+            }
+        ]
+    }
+}

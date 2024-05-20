@@ -1,0 +1,13 @@
+version: '3.8' # Specify the Compose file format version
+
+services:
+  web-component-library: # Define the service name
+    build: # Build the image from the Dockerfile
+      context: . # Use the current directory as the build context
+      dockerfile: Dockerfile # Specify the Dockerfile to use
+    volumes: # Define volumes to mount
+      - .:/web-components # Mount the current directory to /web-components inside the container
+      - /web-components/node_modules # Ensure node_modules are accessible inside the container
+    ports: # Map ports between the host and the container
+      - "6006:6006" # Expose port 6006 for Storybook
+    command: ["npm", "run", "storybook"] # Command to run Storybook inside the container
